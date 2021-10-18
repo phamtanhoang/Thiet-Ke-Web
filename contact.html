@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initital-scale=1.0"/>
+    <meta name="keywords" content="catsashop,CATSA Shop,Catsa shop,đồ nam,thời trang nam,shop đồ nam đẹp"/>
+    <meta name="description" content="CATSA Shop thời trang nam trẻ trung..."/>
+    <title>CATSA Shop</title>
+    <link href="Hình ảnh/shortcut-icon.png" rel="shortcut icon"/>
+    <link href="css/css.css" rel="stylesheet"/>
+    <!-- <link href="css/screen-1390px.css" rel="stylesheet" media="screen and (max-width:1390px)"/>
+    <link href="css/screen-800px.css" rel="stylesheet" media="screen and (max-width:800px)"/>
+    <link href="css/screen-550px.css" rel="stylesheet" media="screen and (max-width:550px)"/> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/javascript.js"></script>
+</head>
+<body onload="Load()">
+    <nav class="menu">
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div>
+            <div class="col15">
+                <a href="index.html"><img src="Hình ảnh/LOGO.png"/></a>
+            </div>
+            <div class="col70">
+                <ul class="sub" id="sub">
+                    <li>
+                        <a href="index.html">TRANG CHỦ</a>
+                    </li>
+                    <li class="menu-products">
+                        <a href="products.html">SẢN PHẨM</a>
+                        <a href="#!" class="blocknext" onclick="myFunctionProducts()">&#10095;</a>
+                        <ul class="subcontent" id="subcontent">
+                            <li><a href="products_shirt.html">Áo</a></li>
+                            <li><a href="products_trousers.html">Quần</a></li>
+                            <li><a href="products_accessory.html">Phụ kiện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">LIÊN HỆ</a>
+                    </li>
+                    <li>
+                        <a href="author.html">VỀ CHÚNG TÔI</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col15">
+                <div>
+                    <img src="Hình ảnh/cart.png"/>
+                </div>
+                <div>
+                    <p>Giỏ hàng</p>
+                    <p>Sản phẩm: <span>0</span></p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="first">
+        <p><a href="index.html">Trang chủ</a> / <a href="contact.html">Liên hệ</a></p>
+    </div>
+    <section class="first">
+        <div>
+            <div class="title">
+                <h1>LIÊN HỆ</h1>
+            </div>
+            <div class="form">
+                <div>
+                    <p><strong>Địa chỉ:</strong> 371 Nguyễn Kiệm, P3, Q.Gò Vấp, TP.HCM </p>
+                    <p><strong>Hotline: </strong>0352 910 703</p>
+                    <p><strong>Email:</strong>Hoangdt@gmail.com</p>
+                </div>
+                <div>
+                    <h2>Gửi thông tin cho CATSA</h2>
+                    <div class="two">
+                        <input type="text" placeholder="Họ tên" title="Vui lòng nhập họ và tên..." name="contact-name" id="contact-name">
+                        <input type="text" placeholder="Số điện thoại" title="Vui lòng nhập số điện thoại..." name="phone" id="contact-phone">
+                    </div>
+                    <div class="two">
+                        <input type="text" placeholder="Địa chỉ" title="Vui lòng nhập địa chỉ..." name="address" id="contact-address">
+                        <input type="text" placeholder="Email" title="Vui lòng nhập địa chỉ email" name="email" id="contact-email">
+                    </div>
+                    <div class="one"><input type="text" placeholder="Chủ đề" title="Vui lòng nhập chủ đề..." name="name" id="contact-title"></div>
+                    <div class="one"><textarea name="description" placeholder="Nội dung" title="Vui lòng nhập nội dung..." style="padding:5px" id="contact-description"></textarea></div>
+                    <div class="one"><input type="file" name="fileupload" accept="image/*" title="Thêm file đính kèm"></div>
+                    <button type="submit" id="submit2">Gửi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="second">
+        <div class="MapAndMail">
+            <div class="col50 map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9352036098253!2d106.6756238146212!3d10.816270761415069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1630330019513!5m2!1svi!2s" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="col82">
+            <div class="footer">
+                <div class="content">
+                    <div class="col60">
+                        <img src="Hình ảnh/Logo2.jpg">
+                    </div>
+                    <div class="col40">
+                        <p>Luôn nỗ lực hoàn thiện và phát triển sự chuyên môn hoá bằng những cải tiến không ngừng nhằm giữ vững vị trí hàng đầu trong các lĩnh vực hoạt động. </p>
+                    </div>  
+                </div>  
+                <div class="follow">
+                    <h3>Theo dõi Catsa</h3>
+                    <div>
+                        <img src="Hình ảnh/Liên hệ/facebook.png">
+                        <img src="Hình ảnh/Liên hệ/twitter.png">
+                        <img src="Hình ảnh/Liên hệ/google.png">
+                        <img src="Hình ảnh/Liên hệ/youtube.png">
+                    </div>
+                </div>
+                <div class="poli">
+                    <h3>Chính sách khách hàng</h3>
+                    <a href="#!">Chính sách sản phẩm</a>
+                    <br>
+                    <a href="#!">Chính sách thanh toán</a>
+                    <br>
+                    <a href="#!">Chính sách giao hàng</a>
+                    <br>
+                    <a href="#!">Chính sách đổi trả</a>
+                </div>
+                <div class="address">
+                    <h3>Thông tin shop</h3>
+                    <p>Địa chỉ: 371 Nguyễn Kiệm, P3, Q.Gò Vấp,TP.HCM </p>
+                    <p>Số điện thoại: <a href="tel:0352910703">0352 910 703</a></p>
+                    <p>Gmail: <a href="mailto:Hoangdt@gmail.com">Hoangdt@gmail.com</a></p>
+                </div>
+                
+            </div>
+            <p style="text-align: center">Copyright &copy <a href="index.html" style="color: gray;">Catsa Shop</a></p>
+        </div>
+    </footer>
+    <div class="connect">
+        <a href="tel:0352910703"><img src="Hình ảnh/Liên hệ/phone.png"/></a>
+        <br>
+        <a href="https://zalo.me/0362400302"><img src="Hình ảnh/Liên hệ/zalo.png"/></a>
+        <br>
+        <a href="#!"><img src="Hình ảnh/cart.png"></a>
+    </div>
+    <div>
+        <a href="javascript:;" ><img src="Hình ảnh/gototop.png" id="gototop"/></a>
+    </div>
+</body>
+</html>

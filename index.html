@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initital-scale=1.0"/>
+    <meta name="keywords" content="catsashop,CATSA Shop,Catsa shop,đồ nam,thời trang nam,shop đồ nam đẹp"/>
+    <meta name="description" content="CATSA Shop thời trang nam trẻ trung..."/>
+    <title>CATSA Shop</title>
+    <link href="Hình ảnh/shortcut-icon.png" rel="shortcut icon"/>
+    <link href="css/css.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/javascript.js"></script>
+</head>
+<body onload="Load()">
+    <nav class="menu">
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div>
+            <div class="col15">
+                <a href="index.html"><img src="Hình ảnh/LOGO.png"/></a>
+            </div>
+            <div class="col70">
+                <ul class="sub" id="sub">
+                    <li>
+                        <a href="index.html">TRANG CHỦ</a>
+                    </li>
+                    <li class="menu-products">
+                        <a href="products.html">SẢN PHẨM</a>
+                        <a href="#!" class="blocknext" onclick="myFunctionProducts()">&#10095;</a>
+                        <ul class="subcontent" id="subcontent">
+                            <li><a href="products_shirt.html">Áo</a></li>
+                            <li><a href="products_trousers.html">Quần</a></li>
+                            <li><a href="products_accessory.html">Phụ kiện</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">LIÊN HỆ</a>
+                    </li>
+                    <li>
+                        <a href="author.html">VỀ CHÚNG TÔI</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col15">
+                <div>
+                    <img src="Hình ảnh/cart.png"/>
+                </div>
+                <div>
+                    <p>Giỏ hàng</p>
+                    <p>Sản phẩm: <span>0</span></p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="slideShow">
+            <div class="slides">
+                <img src="Hình ảnh/Banner/1.jpg" class="slide" style="display:block" />
+                <img src="Hình ảnh/Banner/2.jpg" class="slide"/>
+                <img src="Hình ảnh/Banner/3.jpg" class="slide"/>
+                <img src="Hình ảnh/Banner/4.jpg" class="slide"/>
+                <img src="Hình ảnh/Banner/5.jpg" class="slide"/>    
+            </div>
+            <div class="pointer">
+                <a href="#!" class="prev" onclick="roll(-1)">&#10094;</a>
+                <a href="#!" class="next" onclick="roll(1)">&#10095;</a>
+            </div> 
+        </div>
+        <div class="dots" style="text-align: center;">
+            <a href="#!" class="dot Dot" onclick="change(1)"></a>
+            <a href="#!" class="dot" onclick="change(2)"></a>
+            <a href="#!" class="dot" onclick="change(3)"></a>
+            <a href="#!" class="dot" onclick="change(4)"></a>
+            <a href="#!" class="dot" onclick="change(5)"></a>
+        </div>
+    </header>
+    <section class="first">
+        <div>
+            <div class="title">
+                <h1>Sản phẩm nổi bật</h1>
+                <h4>Một số sản phẩm nổi bật tại shop</h4>
+            </div>
+    
+            <div class="products">
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Polo/đen trắng/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/đen trắng/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/đen trắng/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/đen trắng/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/đen trắng/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Áo Polo trắng phối đen</a>
+                            <br>
+                            <a class="price">290.000₫</a>   
+                        </div>
+                        <div class="label">
+                            <span>NEW</span>
+                        </div> 
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Quần jean/Xanh rách/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/Xanh rách/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/Xanh rách/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/Xanh rách/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/Xanh rách/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Quần Jeans xanh wash xước</a>
+                            <br>
+                            <a class="price">590.000₫</a>   
+                        </div>
+                        <div class="label">
+                            <span>NEW</span>
+                        </div> 
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Áo thun/thun hồng/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun hồng/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun hồng/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun hồng/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun hồng/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Áo thun hồng S.oversize</a>
+                            <br>
+                            <a class="price">250.000₫</a>   
+                        </div>
+                        <div class="label">
+                            <span>NEW</span>
+                        </div> 
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Quần short/jeans đen/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần short/jeans đen/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần short/jeans đen/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần short/jeans đen/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần short/jeans đen/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Quần lửng Jeans đen</a>
+                            <br>
+                            <a class="price">350.000₫</a>   
+                        </div>
+                        <div class="label">
+                            <span>NEW</span>
+                        </div> 
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Áo thun/thun xanh/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun xanh/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun xanh/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun xanh/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun xanh/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Áo thun xanh in chữ</a>
+                            <br>
+                            <a class="price">270.000₫</a>   
+                        </div>
+                        <div class="label">
+                            <span>NEW</span>
+                        </div> 
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Quần short/jeans rách/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần short/jeans rách/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần short/jeans rách/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần short/jeans rách/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần short/jeans rách/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Quần lửng Jeans xanh xước</a>
+                            <br>
+                            <a class="price">370.000₫</a>   
+                        </div>
+                        <div class="label">
+                            <span>NEW</span>
+                        </div> 
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Sơ mi/họa tiêt/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Sơ mi/họa tiêt/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Sơ mi/họa tiêt/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Sơ mi/họa tiêt/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Sơ mi/họa tiêt/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Áo sơ mi họa tiết tay ngắn</a>
+                            <br>
+                            <a class="price">320.000₫</a>   
+                        </div>
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Polo/trắng xanh/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/trắng xanh/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/trắng xanh/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/trắng xanh/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/trắng xanh/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Áo Polo trắng sọc xanh</a>
+                            <br>
+                            <a class="price">290.000₫</a>   
+                        </div> 
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Quần jean/trắng rách/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/trắng rách/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/trắng rách/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/trắng rách/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/trắng rách/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Quần Jeans trắng wash rách</a>
+                            <br>
+                            <a class="price">520.000₫</a>   
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Phụ kiện/[XBG096] Ba lô đen CS.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Phụ kiện/[XBG096] Ba lô đen CS.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Ba lô đen CATSA</a>
+                            <br>
+                            <a class="price">485.000₫</a>   
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Phụ kiện/[1163YL] Đồng hồ đeo tay Skmei - 1163YL.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Phụ kiện/[1163YL] Đồng hồ đeo tay Skmei - 1163YL.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Đồng hồ đeo tay Skmei</a>
+                            <br>
+                            <a class="price">385.000₫</a>   
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Áo thun/thun vàng/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun vàng/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun vàng/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun vàng/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun vàng/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Áo thun vàng in chữ</a>
+                            <br>
+                            <a class="price">255.000₫</a>   
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Quần jean/kaki đen/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/kaki đen/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/kaki đen/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/kaki đen/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/kaki đen/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Quần Jeans kaki đen</a>
+                            <br>
+                            <a class="price">500.000₫</a>   
+                        </div>
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Polo/xanh biển/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/xanh biển/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/xanh biển/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/xanh biển/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/xanh biển/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Áo Polo xanh biển</a>
+                            <br>
+                            <a class="price">290.000₫</a>   
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Sơ mi/trắng dài/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Sơ mi/trắng dài/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Sơ mi/trắng dài/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Sơ mi/trắng dài/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Sơ mi/trắng dài/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Áo sơ mi trắng tay dài</a>
+                            <br>
+                            <a class="price">320.000₫</a>   
+                        </div>
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Phụ kiện/[XEL229] Dây nịt.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Phụ kiện/[XEL229] Dây nịt.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Thắt lưng CATSA 2</a>
+                            <br>
+                            <a class="price">234.000₫</a>   
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Áo thun/thun đen/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun đen/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun đen/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun đen/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Áo thun/thun đen/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Áo thun đen in hình</a>
+                            <br>
+                            <a class="price">265.000₫</a>   
+                        </div>
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Phụ kiện/[SL5059GBN-7] Đồng hồ đeo tay Nakzen - SL5059GBN-7.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Phụ kiện/[SL5059GBN-7] Đồng hồ đeo tay Nakzen - SL5059GBN-7.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Đồng hồ đeo tay Nakzen</a>
+                            <br>
+                            <a class="price">395.000₫</a>   
+                        </div>
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Polo/đen in/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/đen in/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/đen in/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/đen in/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Polo/đen in/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Áo Polo đen in</a>
+                            <br>
+                            <a class="price">300.000₫</a>   
+                        </div>
+                    </div>
+                </div>
+                <div class="product" id="product">
+                    <div>
+                        <div class="imgMain">
+                            <img src="Hình ảnh/Quần jean/đen/1.jpg" id="main">
+                        </div>
+                        <div class="Superman">
+                            <div class="imgSubs">
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/đen/1.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/đen/2.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/đen/3.jpg">
+                                </a>
+                                <a href="#!" class="imgSub">
+                                    <img src="Hình ảnh/Quần jean/đen/4.jpg">
+                                </a>
+                            </div>
+                            <div class="Buttons">
+                                <input type="button" value="Mua ngay" class="buy"/>
+                                <input type="button" value="Thêm vào giỏ hàng" class="addCart"/>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <a class="name">Quần Jeans đen</a>
+                            <br>
+                            <a class="price">>545.000₫</a>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Arrow">
+                <div class="downImg" id="downImg">
+                    <a href="#!" class="downArrow" onclick="down()"></a>
+                    <br>
+                    <a href="#!" onclick="down()" class="text">Xem thêm</a>
+                </div>
+                <div class="upImg" id="upImg" style="display: none;">
+                    <a href="#downImg" class="upArrow" onclick="up()"></a>
+                    <br>
+                    <a href="#downImg" onclick="up()" class="text">Ẩn bớt</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="first">
+        <div>
+            <div class="title">
+                <h1>Feedback của khách hàng</h1>
+                <h4>Một số phản hồi của khách khi mua hàng tại shop</h4>
+            </div>
+            <div class="feedbacks">
+                <div>
+                    <div class="feedback">
+                        <div class="avatar">
+                            <img src="Hình ảnh/Feedback/Tùng.jpg">
+                        </div>
+                        <div  class="infomation">
+                            <h2 >Sơn Tùng M-TP</h2>
+                            <a class="time">July 21, 2021 <span>Feedback</span></a>
+                            <p>"Cảm ơn shop nha, một địa chỉ đáng uy tín và tin cậy. Để giới thiệu bạn bè ủng hộ shop nhiều"</p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <div class="avatar">
+                            <img src="Hình ảnh/Feedback/Trinh.jfif">
+                        </div>
+                        <div  class="infomation">
+                            <h2 >Ngọc Trinh</h2>
+                            <a class="time">August 31, 2021 <span>Feedback</span></a>
+                            <p>"Chủ shop đẹp trai, thân thiên, chuyên nghiệp. Dịch vụ thì miễn bàn"</p>
+                        </div>
+                    </div> 
+                    <div class="feedback">
+                        <div class="avatar">
+                            <img src="Hình ảnh/Feedback/Rosé.jpg">
+                        </div>
+                        <div  class="infomation">
+                            <h2 >Rosé</h2>
+                            <a class="time">September 10, 2021 <span>Feedback</span></a>
+                            <p>"Dịch vụ tận tình, cảm giác được nâng niu, không biết nhân viên shop đã có người yêu chưa"</p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <div class="avatar">
+                            <img src="Hình ảnh/Feedback/Taylor.jfif">
+                        </div>
+                        <div  class="infomation">   
+                            <h2 >Taylor Swift</h2>
+                            <a class="time">September 13,2021 <span>Feedback</span></a>
+                            <p>"Shop giao hàng siêu lẹ, đóng gói kĩ càng nữa, thiệt có tâm"</p>
+                        </div>
+                    </div>    
+                    <div class="feedback">
+                        <div class="avatar">
+                            <img src="Hình ảnh/Feedback/JustinBieber.jpg">
+                        </div>   
+                        <div  class="infomation">
+                            <h2 >Justin Bieber</h2>
+                            <a class="time">October 2, 2021 <span>Feedback</span></a>
+                            <p>"Shop giao hàng kiểu gì mà nhanh quá trời, mới đặt 2 ngày sau đã có hàng"</p>
+                        </div>
+                    </div> 
+                </div>  
+            </div>
+        </div>
+    </section>
+    <section class="second">
+        <div>
+            <div class="title">
+                <h1>Chính sách khách hàng</h1>
+                <h4>Một số chính sách khi mua hàng tại shop</h4>
+            </div>
+            <div class="policy">
+                <div>
+                    <div>
+                        <img src="Hình ảnh/Chính sách/sản phẩm.png">
+                        <h4>Chính sách sản phẩm</h4>
+                        <p>Chất lượng thật - Giá trị thật</p>
+                        <a href="#!">Xem chi tiết</a>
+                    </div>
+                    <div>
+                        <img src="Hình ảnh/Chính sách/thanh toán.png">
+                        <h4>Phương thức thanh toán</h4>
+                        <p>Thanh toán nhanh</p>
+                        <a href="#!">Xem chi tiết</a>
+                    </div>
+                    <div>
+                        <img src="Hình ảnh/Chính sách/giao hàng.png">
+                        <h4>Chính sách giao hàng</h4>
+                        <p>Giao hàng nhanh chóng </p>
+                        <a href="#!">Xem chi tiết</a>
+                    </div>
+                    <div>
+                        <img src="Hình ảnh/Chính sách/đổi trả.png">
+                        <h4>Chính sách đổi trả</h4>
+                        <p>Cả nhà đều vui </p>
+                        <a href="#!">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="second">
+        <div class="MapAndMail">
+            <div class="col50">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9352036098253!2d106.6756238146212!3d10.816270761415069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1630330019513!5m2!1svi!2s" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div style="background-image: url(Hình\ ảnh/nền.jpg);" class="col50">
+                <div class="email">
+                    <h3>Đăng kí nhận tư vấn</h3>
+                    <p>Để cập nhật những sản phẩm mới, nhận thông tin ưu đãi đặc biệt và những thông tin giảm giá khác</p>
+                    <div>
+                        <input type="email" placeholder="Nhập địa chỉ email của bạn..." id="email">
+                        <button type="submit" id="submit">Đăng kí</button>
+                    </div>
+                    <p>Hãy nhập email của bạn vào đây để nhận tin!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="col82">
+            <div class="footer">
+                <div class="content">
+                    <div class="col60">
+                        <img src="Hình ảnh/Logo2.jpg">
+                    </div>
+                    <div class="col40">
+                        <p>Luôn nỗ lực hoàn thiện và phát triển sự chuyên môn hoá bằng những cải tiến không ngừng nhằm giữ vững vị trí hàng đầu trong các lĩnh vực hoạt động. </p>
+                    </div>  
+                </div>  
+                <div class="follow">
+                    <h3>Theo dõi Catsa</h3>
+                    <div>
+                        <img src="Hình ảnh/Liên hệ/facebook.png">
+                        <img src="Hình ảnh/Liên hệ/twitter.png">
+                        <img src="Hình ảnh/Liên hệ/google.png">
+                        <img src="Hình ảnh/Liên hệ/youtube.png">
+                    </div>
+                </div>
+                <div class="poli">
+                    <h3>Chính sách khách hàng</h3>
+                    <a href="#!">Chính sách sản phẩm</a>
+                    <br>
+                    <a href="#!">Chính sách thanh toán</a>
+                    <br>
+                    <a href="#!">Chính sách giao hàng</a>
+                    <br>
+                    <a href="#!">Chính sách đổi trả</a>
+                </div>
+                <div class="address">
+                    <h3>Thông tin shop</h3>
+                    <p>Địa chỉ: 371 Nguyễn Kiệm, P3, Q.Gò Vấp,TP.HCM </p>
+                    <p>Số điện thoại: <a href="tel:0352910703">0352 910 703</a></p>
+                    <p>Gmail: <a href="mailto:Hoangdt@gmail.com">Hoangdt@gmail.com</a></p>
+                </div>
+                
+            </div>
+            <p style="text-align: center">Copyright &copy <a href="index.html" style="color: gray;">Catsa Shop</a></p>
+        </div>
+    </footer>
+    <div class="connect">
+        <a href="tel:0352910703"><img src="Hình ảnh/Liên hệ/phone.png"/></a>
+        <br>
+        <a href="https://zalo.me/0362400302"><img src="Hình ảnh/Liên hệ/zalo.png"/></a>
+        <br>
+        <a href="#!"><img src="Hình ảnh/cart.png"></a>
+    </div>
+    <div>
+        <a href="javascript:;" ><img src="Hình ảnh/gototop.png" id="gototop"/></a>
+    </div> 
+</body>
+</html>
