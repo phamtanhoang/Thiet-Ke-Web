@@ -885,6 +885,12 @@ div.first a{
         height: 3px;
         margin: 3px 0;
     }
+    .change .bar1{
+        transform: rotate(-45deg) translate(-5px, 3px);
+    } 
+    .change .bar3{
+        transform: rotate(45deg) translate(-4px, -5px);
+    }
     .sub>li>a{
         padding:10px;
         font-size: 1rem;
