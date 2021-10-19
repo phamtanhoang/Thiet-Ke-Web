@@ -742,6 +742,7 @@ div.first a{
     .avatar>img{  
         margin:0 auto; 
         width: 80%; 
+        height:fit-content;
     }
     .infomation{
         padding-left: 3%;
