@@ -8,9 +8,6 @@
     <title>CATSA Shop</title>
     <link href="Hình ảnh/shortcut-icon.png" rel="shortcut icon"/>
     <link href="css/css.css" rel="stylesheet"/>
-    <link href="css/screen-1390px.css" rel="stylesheet" media="screen and (max-width:1390px)"/>
-    <link href="css/screen-800px.css" rel="stylesheet" media="screen and (max-width:800px)"/>
-    <link href="css/screen-550px.css" rel="stylesheet" media="screen and (max-width:550px)"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/javascript.js"></script>
 </head>
@@ -47,14 +44,20 @@
                     </li>
                 </ul>
             </div>
-            <div class="col15">
-                <div>
+            <div class="col15 displayNone">
+                <div class="img-Cart" id="img-Cart">
                     <img src="Hình ảnh/cart.png"/>
                 </div>
-                <div>
+                <div class="quantity-in-cart">
                     <p>Giỏ hàng</p>
-                    <p>Sản phẩm: <span>0</span></p>
+                    <p>Sản phẩm: <span class="sumProducts" id="sumProducts">0</span></p>
                 </div>
+            </div>
+            <div class="cart-total">
+                
+                <strong class="cart-total-title">Tổng Tiền: </strong>
+                <span class="cart-total-price">0đ</span>
+                <strong><button class="btn-buy" type="button">Thanh Toán</button></strong>
             </div>
         </div>
     </nav>
@@ -146,7 +149,10 @@
         <br>
         <a href="https://zalo.me/0362400302"><img src="Hình ảnh/Liên hệ/zalo.png"/></a>
         <br>
-        <a href="#!"><img src="Hình ảnh/cart.png"></a>
+        <a href="#!" class="cartTablet">
+            <img src="Hình ảnh/cart.png">
+            <span class="sumProducts" >0</span>
+        </a>
     </div>
     <div>
         <a href="javascript:;" ><img src="Hình ảnh/gototop.png" id="gototop"/></a>
